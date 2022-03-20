@@ -1,3 +1,5 @@
+const TaskSchema = require("../models/tasks");
+
 const getAllTasks = (req, res) => {
   res.send("getAllTasks");
 };
@@ -6,8 +8,9 @@ const getSingleTask = (req, res) => {
   res.json({ id: req.params.id });
 };
 
-const createTask = (req, res) => {
-  res.json(req.body);
+const createTask = async (req, res) => {
+  const task = await TaskSchema.create(req.body);
+  res.status(201).json({ task });
 };
 
 const updateTask = (req, res) => {
