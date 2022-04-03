@@ -1,7 +1,5 @@
 Projeto de Back-end "Lista de Tarefas" com base no vídeo: https://youtu.be/qwfE7fSVaZM
 
-https://rafaelamr93.github.io/Task-Manager/
-
 
 Código em Node/Express
 
